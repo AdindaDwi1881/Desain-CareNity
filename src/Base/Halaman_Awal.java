@@ -28,21 +28,40 @@ public class Halaman_Awal extends javax.swing.JFrame {
     private void initComponents() {
 
         btn_momdad = new javax.swing.JToggleButton();
+        btn_admin = new javax.swing.JButton();
+        btn_dokter = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn_momdad.setBackground(new java.awt.Color(249, 251, 255));
-        btn_momdad.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        btn_momdad.setText("MomDad");
+        btn_momdad.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        btn_momdad.setForeground(new java.awt.Color(62, 130, 255));
+        btn_momdad.setText("Mom and Dad");
         btn_momdad.setBorder(null);
         btn_momdad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_momdadActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_momdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, 330, 70));
+        getContentPane().add(btn_momdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 430, 90));
+
+        btn_admin.setBackground(new java.awt.Color(249, 251, 255));
+        btn_admin.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        btn_admin.setForeground(new java.awt.Color(62, 130, 255));
+        btn_admin.setText("Admin");
+        btn_admin.setBorder(null);
+        getContentPane().add(btn_admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 415, 350, 80));
+
+        btn_dokter.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        btn_dokter.setForeground(new java.awt.Color(62, 130, 255));
+        btn_dokter.setText("Dokter");
+        btn_dokter.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_dokterActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_dokter, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 540, 430, 90));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/Halaman Awal (2).png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, 740));
@@ -51,8 +70,13 @@ public class Halaman_Awal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_momdadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_momdadActionPerformed
-        // TODO add your handling code here:
+        Halaman_Login_User Masuk = new Halaman_Login_User ();
+        Masuk.setVisible(true);
     }//GEN-LAST:event_btn_momdadActionPerformed
+
+    private void btn_dokterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_dokterActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_dokterActionPerformed
 
     /**
      * @param args the command line arguments
@@ -90,6 +114,8 @@ public class Halaman_Awal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_admin;
+    private javax.swing.JButton btn_dokter;
     private javax.swing.JToggleButton btn_momdad;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables

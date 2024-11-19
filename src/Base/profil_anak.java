@@ -27,42 +27,47 @@ public class profil_anak extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
-        jRadioButton4 = new javax.swing.JRadioButton();
+        rbt_perempuan = new javax.swing.JRadioButton();
+        rbt_lakilaki = new javax.swing.JRadioButton();
+        rbt_ya = new javax.swing.JRadioButton();
+        rbt_tidak = new javax.swing.JRadioButton();
         txt_input_namaAnak = new javax.swing.JTextField();
         txt_inpput_tglLahir = new javax.swing.JTextField();
         btn_lanjutkeDataOrtu = new javax.swing.JToggleButton();
+        btn_home = new javax.swing.JButton();
+        btn_transaksi = new javax.swing.JButton();
+        btn_chatdokter = new javax.swing.JButton();
+        btn_komunitas = new javax.swing.JButton();
+        btn_konten = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jRadioButton1.setBackground(new java.awt.Color(0,0,0,0)
+        rbt_perempuan.setBackground(new java.awt.Color(0,0,0,0)
         );
-        jRadioButton1.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
-        jRadioButton1.setText("Perempuan");
-        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 461, 140, 40));
+        rbt_perempuan.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
+        rbt_perempuan.setText("Perempuan");
+        getContentPane().add(rbt_perempuan, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 461, 140, 40));
 
-        jRadioButton2.setBackground(new java.awt.Color(0,0,0,0)
+        rbt_lakilaki.setBackground(new java.awt.Color(0,0,0,0)
         );
-        jRadioButton2.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
-        jRadioButton2.setText("Laki-laki");
-        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 120, 40));
+        rbt_lakilaki.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
+        rbt_lakilaki.setText("Laki-laki");
+        getContentPane().add(rbt_lakilaki, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 460, 120, 40));
 
-        jRadioButton3.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
-        jRadioButton3.setText("Ya");
-        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+        rbt_ya.setFont(new java.awt.Font("Arial", 3, 18)); // NOI18N
+        rbt_ya.setText("Ya");
+        rbt_ya.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton3ActionPerformed(evt);
+                rbt_yaActionPerformed(evt);
             }
         });
-        getContentPane().add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 560, 80, 40));
+        getContentPane().add(rbt_ya, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 560, 80, 40));
 
-        jRadioButton4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jRadioButton4.setText("Tidak");
-        getContentPane().add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 560, 100, 40));
+        rbt_tidak.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        rbt_tidak.setText("Tidak");
+        getContentPane().add(rbt_tidak, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 560, 100, 40));
 
         txt_input_namaAnak.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
         txt_input_namaAnak.setBorder(null);
@@ -81,7 +86,22 @@ public class profil_anak extends javax.swing.JFrame {
                 btn_lanjutkeDataOrtuActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_lanjutkeDataOrtu, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 100, 250, 30));
+        getContentPane().add(btn_lanjutkeDataOrtu, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 90, 310, 60));
+
+        btn_home.setText("Home");
+        getContentPane().add(btn_home, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 120, -1));
+
+        btn_transaksi.setText("Transaksi");
+        getContentPane().add(btn_transaksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 120, -1));
+
+        btn_chatdokter.setText("Chat Dokter");
+        getContentPane().add(btn_chatdokter, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 350, 120, -1));
+
+        btn_komunitas.setText("Komunitas");
+        getContentPane().add(btn_komunitas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 450, 120, -1));
+
+        btn_konten.setText("Konten");
+        getContentPane().add(btn_konten, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 540, 100, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/profil anak.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, -1));
@@ -89,9 +109,9 @@ public class profil_anak extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+    private void rbt_yaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rbt_yaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton3ActionPerformed
+    }//GEN-LAST:event_rbt_yaActionPerformed
 
     private void btn_lanjutkeDataOrtuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_lanjutkeDataOrtuActionPerformed
         // TODO add your handling code here:
@@ -133,12 +153,17 @@ public class profil_anak extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_chatdokter;
+    private javax.swing.JButton btn_home;
+    private javax.swing.JButton btn_komunitas;
+    private javax.swing.JButton btn_konten;
     private javax.swing.JToggleButton btn_lanjutkeDataOrtu;
+    private javax.swing.JButton btn_transaksi;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
-    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton rbt_lakilaki;
+    private javax.swing.JRadioButton rbt_perempuan;
+    private javax.swing.JRadioButton rbt_tidak;
+    private javax.swing.JRadioButton rbt_ya;
     private javax.swing.JTextField txt_inpput_tglLahir;
     private javax.swing.JTextField txt_input_namaAnak;
     // End of variables declaration//GEN-END:variables

@@ -70,9 +70,16 @@ public class Buat_Akun extends javax.swing.JFrame {
         txt_input_password.setBorder(null);
         getContentPane().add(txt_input_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 490, 500, 40));
 
+        jButton2.setBackground(new java.awt.Color(0,0,0,0)
+        );
         jButton2.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 24)); // NOI18N
         jButton2.setForeground(new java.awt.Color(51, 51, 255));
         jButton2.setText("Masuk");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 600, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/Sig up Canva.png"))); // NOI18N
@@ -90,8 +97,14 @@ public class Buat_Akun extends javax.swing.JFrame {
     }//GEN-LAST:event_txt_input_emailActionPerformed
 
     private void btn_daftarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_daftarActionPerformed
-        // TODO add your handling code here:
+        Home_user TambahAnak = new  Home_user ();
+        TambahAnak.setVisible(true);
     }//GEN-LAST:event_btn_daftarActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+         sig_in_user Masuk = new  sig_in_user ();
+         Masuk.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

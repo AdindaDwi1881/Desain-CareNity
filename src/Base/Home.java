@@ -27,10 +27,35 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btn_tambahprofilanak = new javax.swing.JButton();
+        btn_home = new javax.swing.JButton();
+        btn_transaksi = new javax.swing.JButton();
+        btn_chatdokter = new javax.swing.JButton();
+        btn_komunitas = new javax.swing.JButton();
+        btn_konten = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btn_tambahprofilanak.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
+        btn_tambahprofilanak.setText("Tambah Profil Anak");
+        getContentPane().add(btn_tambahprofilanak, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 280, 280, 50));
+
+        btn_home.setText("Home");
+        getContentPane().add(btn_home, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 220, 110, -1));
+
+        btn_transaksi.setText("Transaksi");
+        getContentPane().add(btn_transaksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 110, -1));
+
+        btn_chatdokter.setText("Chat Dokter");
+        getContentPane().add(btn_chatdokter, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 120, -1));
+
+        btn_komunitas.setText("Komunitas");
+        getContentPane().add(btn_komunitas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 110, -1));
+
+        btn_konten.setText("Konten");
+        getContentPane().add(btn_konten, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 580, 90, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/Home.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -74,6 +99,12 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_chatdokter;
+    private javax.swing.JButton btn_home;
+    private javax.swing.JButton btn_komunitas;
+    private javax.swing.JButton btn_konten;
+    private javax.swing.JButton btn_tambahprofilanak;
+    private javax.swing.JButton btn_transaksi;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

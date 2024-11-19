@@ -33,7 +33,7 @@ public class profil_MomandDad extends javax.swing.JFrame {
         txt_input_BBDad = new javax.swing.JTextField();
         jTextField1 = new javax.swing.JTextField();
         txt_input_UmurDad = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btn_simpan = new javax.swing.JButton();
         txt_input_tinggiBadanDad = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -68,9 +68,11 @@ public class profil_MomandDad extends javax.swing.JFrame {
         txt_input_UmurDad.setBorder(null);
         getContentPane().add(txt_input_UmurDad, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 580, 510, -1));
 
-        jButton1.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
-        jButton1.setText("Simpan");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 530, 220, 50));
+        btn_simpan.setBackground(new java.awt.Color(62, 130, 255));
+        btn_simpan.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        btn_simpan.setForeground(new java.awt.Color(255, 255, 255));
+        btn_simpan.setText("Simpan");
+        getContentPane().add(btn_simpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 530, 230, 50));
 
         txt_input_tinggiBadanDad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/profil mom and dad.png"))); // NOI18N
         getContentPane().add(txt_input_tinggiBadanDad, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, -1));
@@ -118,7 +120,7 @@ public class profil_MomandDad extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btn_simpan;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField txt_input_BBDad;
     private javax.swing.JTextField txt_input_BBMom;

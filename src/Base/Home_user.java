@@ -27,27 +27,27 @@ public class Home_user extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btn_home = new javax.swing.JToggleButton();
-        btn_transaksi = new javax.swing.JToggleButton();
-        btn_chatDokter = new javax.swing.JToggleButton();
-        jToggleButton1 = new javax.swing.JToggleButton();
+        btn_TambahAnak = new javax.swing.JButton();
+        btn_transaksi = new javax.swing.JButton();
+        btn_chatdokter = new javax.swing.JButton();
+        btn_komunitas = new javax.swing.JButton();
+        btn_konten = new javax.swing.JButton();
+        btn_home = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btn_home.setBackground(new java.awt.Color(0,0,0,0)
-        );
-        btn_home.setForeground(new java.awt.Color(51, 0, 255));
-        btn_home.setBorder(null);
-        btn_home.setBorderPainted(false);
-        btn_home.setContentAreaFilled(false);
-        btn_home.addActionListener(new java.awt.event.ActionListener() {
+        btn_TambahAnak.setBackground(new java.awt.Color(62, 130, 255));
+        btn_TambahAnak.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
+        btn_TambahAnak.setForeground(new java.awt.Color(255, 255, 255));
+        btn_TambahAnak.setText("+ Tambah Anak");
+        btn_TambahAnak.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_homeActionPerformed(evt);
+                btn_TambahAnakActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_home, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 110, 80));
+        getContentPane().add(btn_TambahAnak, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 230, 390, 90));
 
         btn_transaksi.setText("Transaksi");
         btn_transaksi.addActionListener(new java.awt.event.ActionListener() {
@@ -55,18 +55,24 @@ public class Home_user extends javax.swing.JFrame {
                 btn_transaksiActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_transaksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 120, 80));
+        getContentPane().add(btn_transaksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 290, 120, -1));
 
-        btn_chatDokter.setText("Chat Dokter");
-        btn_chatDokter.addActionListener(new java.awt.event.ActionListener() {
+        btn_chatdokter.setText("Chat Dokter");
+        getContentPane().add(btn_chatdokter, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 370, 120, -1));
+
+        btn_komunitas.setText("Komunitas");
+        getContentPane().add(btn_komunitas, new org.netbeans.lib.awtextra.AbsoluteConstraints(-3, 470, 120, -1));
+
+        btn_konten.setText("Konten");
+        getContentPane().add(btn_konten, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 550, 100, -1));
+
+        btn_home.setText("Home");
+        btn_home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_chatDokterActionPerformed(evt);
+                btn_homeActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_chatDokter, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, -1, 80));
-
-        jToggleButton1.setText("jToggleButton1");
-        getContentPane().add(jToggleButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 120, 70));
+        getContentPane().add(btn_home, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 120, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/Home User.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, -1));
@@ -74,17 +80,18 @@ public class Home_user extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_homeActionPerformed
-
-    private void btn_chatDokterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_chatDokterActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_chatDokterActionPerformed
+    private void btn_TambahAnakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_TambahAnakActionPerformed
+        profil_anak Lanjutkedataortu  = new  profil_anak ();
+        Lanjutkedataortu.setVisible(true);
+    }//GEN-LAST:event_btn_TambahAnakActionPerformed
 
     private void btn_transaksiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_transaksiActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_transaksiActionPerformed
+
+    private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_homeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -122,10 +129,12 @@ public class Home_user extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton btn_chatDokter;
-    private javax.swing.JToggleButton btn_home;
-    private javax.swing.JToggleButton btn_transaksi;
+    private javax.swing.JButton btn_TambahAnak;
+    private javax.swing.JButton btn_chatdokter;
+    private javax.swing.JButton btn_home;
+    private javax.swing.JButton btn_komunitas;
+    private javax.swing.JButton btn_konten;
+    private javax.swing.JButton btn_transaksi;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }
