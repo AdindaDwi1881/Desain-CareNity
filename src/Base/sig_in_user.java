@@ -28,21 +28,17 @@ public class sig_in_user extends javax.swing.JFrame {
     private void initComponents() {
 
         txt_input_NoHp = new javax.swing.JTextField();
-        txt_input_Password = new javax.swing.JTextField();
         btn_Masuk = new javax.swing.JButton();
         btn_password = new javax.swing.JButton();
+        psw_password = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        txt_input_NoHp.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
+        txt_input_NoHp.setFont(new java.awt.Font("Segoe UI Semibold", 0, 24)); // NOI18N
         txt_input_NoHp.setBorder(null);
         getContentPane().add(txt_input_NoHp, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, 510, 50));
-
-        txt_input_Password.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        txt_input_Password.setBorder(null);
-        getContentPane().add(txt_input_Password, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 420, 510, 50));
 
         btn_Masuk.setBackground(new java.awt.Color(62, 130, 255));
         btn_Masuk.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
@@ -54,6 +50,7 @@ public class sig_in_user extends javax.swing.JFrame {
         });
         getContentPane().add(btn_Masuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 490, 370, 80));
 
+        btn_password.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
         btn_password.setForeground(new java.awt.Color(0, 0, 255));
         btn_password.setText("Password Baru");
         btn_password.addActionListener(new java.awt.event.ActionListener() {
@@ -63,6 +60,10 @@ public class sig_in_user extends javax.swing.JFrame {
         });
         getContentPane().add(btn_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 580, 190, 40));
 
+        psw_password.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        psw_password.setBorder(null);
+        getContentPane().add(psw_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, 230, 30));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/Sig in.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 640));
 
@@ -70,11 +71,13 @@ public class sig_in_user extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn_MasukActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_MasukActionPerformed
-        // TODO add your handling code here:
+        Home_user Berhasil = new Home_user();
+        Berhasil.setVisible(true);
     }//GEN-LAST:event_btn_MasukActionPerformed
 
     private void btn_passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_passwordActionPerformed
-        // TODO add your handling code here:
+        Lupa_Password Simpan = new Lupa_Password ();
+        Simpan.setVisible(true);
     }//GEN-LAST:event_btn_passwordActionPerformed
 
     /**
@@ -116,7 +119,7 @@ public class sig_in_user extends javax.swing.JFrame {
     private javax.swing.JButton btn_Masuk;
     private javax.swing.JButton btn_password;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPasswordField psw_password;
     private javax.swing.JTextField txt_input_NoHp;
-    private javax.swing.JTextField txt_input_Password;
     // End of variables declaration//GEN-END:variables
 }

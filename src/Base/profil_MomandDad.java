@@ -34,6 +34,11 @@ public class profil_MomandDad extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         txt_input_UmurDad = new javax.swing.JTextField();
         btn_simpan = new javax.swing.JButton();
+        btn_home = new javax.swing.JButton();
+        btn_transaksi = new javax.swing.JButton();
+        btn_chatdokter = new javax.swing.JButton();
+        btn_komunitas = new javax.swing.JButton();
+        btn_konten = new javax.swing.JButton();
         txt_input_tinggiBadanDad = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -50,6 +55,11 @@ public class profil_MomandDad extends javax.swing.JFrame {
 
         txt_input_BBMom.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
         txt_input_BBMom.setBorder(null);
+        txt_input_BBMom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_input_BBMomActionPerformed(evt);
+            }
+        });
         getContentPane().add(txt_input_BBMom, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 284, 510, -1));
 
         txt_input_UmurMom.setFont(new java.awt.Font("Segoe UI Semibold", 1, 18)); // NOI18N
@@ -72,7 +82,33 @@ public class profil_MomandDad extends javax.swing.JFrame {
         btn_simpan.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         btn_simpan.setForeground(new java.awt.Color(255, 255, 255));
         btn_simpan.setText("Simpan");
-        getContentPane().add(btn_simpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 530, 230, 50));
+        btn_simpan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_simpanActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_simpan, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 520, 310, 70));
+
+        btn_home.setForeground(new java.awt.Color(62, 130, 255));
+        btn_home.setText("Home");
+        btn_home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_homeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_home, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 90, 30));
+
+        btn_transaksi.setText("Transaksi");
+        getContentPane().add(btn_transaksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 280, 100, -1));
+
+        btn_chatdokter.setText("Chat Dokter");
+        getContentPane().add(btn_chatdokter, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 120, -1));
+
+        btn_komunitas.setText("Komunitas");
+        getContentPane().add(btn_komunitas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 110, -1));
+
+        btn_konten.setText("Konten");
+        getContentPane().add(btn_konten, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 550, 90, -1));
 
         txt_input_tinggiBadanDad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/profil mom and dad.png"))); // NOI18N
         getContentPane().add(txt_input_tinggiBadanDad, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, -1, -1));
@@ -83,6 +119,20 @@ public class profil_MomandDad extends javax.swing.JFrame {
     private void txt_input_TinggiBadanMomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_input_TinggiBadanMomActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_input_TinggiBadanMomActionPerformed
+
+    private void btn_simpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_simpanActionPerformed
+        Home Berhasil = new Home();
+        Berhasil.setVisible(true);
+    }//GEN-LAST:event_btn_simpanActionPerformed
+
+    private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
+        Home_user Kembali = new Home_user();
+        Kembali.setVisible(true);
+    }//GEN-LAST:event_btn_homeActionPerformed
+
+    private void txt_input_BBMomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_input_BBMomActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_input_BBMomActionPerformed
 
     /**
      * @param args the command line arguments
@@ -120,7 +170,12 @@ public class profil_MomandDad extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_chatdokter;
+    private javax.swing.JButton btn_home;
+    private javax.swing.JButton btn_komunitas;
+    private javax.swing.JButton btn_konten;
     private javax.swing.JButton btn_simpan;
+    private javax.swing.JButton btn_transaksi;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField txt_input_BBDad;
     private javax.swing.JTextField txt_input_BBMom;

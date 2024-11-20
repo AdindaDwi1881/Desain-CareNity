@@ -66,6 +66,7 @@ public class Home_user extends javax.swing.JFrame {
         btn_konten.setText("Konten");
         getContentPane().add(btn_konten, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 550, 100, -1));
 
+        btn_home.setForeground(new java.awt.Color(62, 130, 255));
         btn_home.setText("Home");
         btn_home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,7 +91,8 @@ public class Home_user extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_transaksiActionPerformed
 
     private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
-        // TODO add your handling code here:
+        Home_user home = new Home_user();
+        home.setVisible(true);
     }//GEN-LAST:event_btn_homeActionPerformed
 
     /**

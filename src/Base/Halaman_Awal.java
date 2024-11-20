@@ -35,6 +35,7 @@ public class Halaman_Awal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btn_momdad.setBackground(new java.awt.Color(249, 251, 255));
         btn_momdad.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         btn_momdad.setForeground(new java.awt.Color(62, 130, 255));
         btn_momdad.setText("Mom and Dad");
@@ -51,8 +52,9 @@ public class Halaman_Awal extends javax.swing.JFrame {
         btn_admin.setForeground(new java.awt.Color(62, 130, 255));
         btn_admin.setText("Admin");
         btn_admin.setBorder(null);
-        getContentPane().add(btn_admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 415, 350, 80));
+        getContentPane().add(btn_admin, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 405, 420, 90));
 
+        btn_dokter.setBackground(new java.awt.Color(249, 251, 255));
         btn_dokter.setFont(new java.awt.Font("Times New Roman", 1, 48)); // NOI18N
         btn_dokter.setForeground(new java.awt.Color(62, 130, 255));
         btn_dokter.setText("Dokter");

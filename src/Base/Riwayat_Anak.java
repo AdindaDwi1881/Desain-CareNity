@@ -27,16 +27,30 @@ public class Riwayat_Anak extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btn_Home = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btn_Home.setBackground(new java.awt.Color(0,0,0,0));
+        btn_Home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_HomeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_Home, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 30, 90, 80));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/Riwayat Anak.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 690));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_HomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_HomeActionPerformed
+        Home MenuUtama = new  Home ();
+        MenuUtama.setVisible(true);
+    }//GEN-LAST:event_btn_HomeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -74,6 +88,7 @@ public class Riwayat_Anak extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_Home;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

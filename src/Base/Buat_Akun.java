@@ -30,8 +30,8 @@ public class Buat_Akun extends javax.swing.JFrame {
         txt_input_NoHP = new javax.swing.JTextField();
         txt_input_email = new javax.swing.JTextField();
         btn_daftar = new javax.swing.JButton();
-        txt_input_password = new javax.swing.JTextField();
         jButton2 = new javax.swing.JButton();
+        psw_InputPassword = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -58,17 +58,13 @@ public class Buat_Akun extends javax.swing.JFrame {
         btn_daftar.setBackground(new java.awt.Color(62, 130, 255));
         btn_daftar.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
         btn_daftar.setForeground(new java.awt.Color(255, 255, 255));
-        btn_daftar.setText("Daftar");
+        btn_daftar.setText("Daftar & Simpan");
         btn_daftar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_daftarActionPerformed(evt);
             }
         });
         getContentPane().add(btn_daftar, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 510, 410, 60));
-
-        txt_input_password.setFont(new java.awt.Font("Segoe UI Semibold", 0, 18)); // NOI18N
-        txt_input_password.setBorder(null);
-        getContentPane().add(txt_input_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 490, 500, 40));
 
         jButton2.setBackground(new java.awt.Color(0,0,0,0)
         );
@@ -81,6 +77,10 @@ public class Buat_Akun extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 600, -1, -1));
+
+        psw_InputPassword.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        psw_InputPassword.setBorder(null);
+        getContentPane().add(psw_InputPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 490, 190, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/Sig up Canva.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -10, 1269, -1));
@@ -145,8 +145,8 @@ public class Buat_Akun extends javax.swing.JFrame {
     private javax.swing.JButton btn_daftar;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPasswordField psw_InputPassword;
     private javax.swing.JTextField txt_input_NoHP;
     private javax.swing.JTextField txt_input_email;
-    private javax.swing.JTextField txt_input_password;
     // End of variables declaration//GEN-END:variables
 }

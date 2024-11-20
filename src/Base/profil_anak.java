@@ -33,12 +33,12 @@ public class profil_anak extends javax.swing.JFrame {
         rbt_tidak = new javax.swing.JRadioButton();
         txt_input_namaAnak = new javax.swing.JTextField();
         txt_inpput_tglLahir = new javax.swing.JTextField();
-        btn_lanjutkeDataOrtu = new javax.swing.JToggleButton();
         btn_home = new javax.swing.JButton();
         btn_transaksi = new javax.swing.JButton();
         btn_chatdokter = new javax.swing.JButton();
         btn_komunitas = new javax.swing.JButton();
         btn_konten = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -77,18 +77,13 @@ public class profil_anak extends javax.swing.JFrame {
         txt_inpput_tglLahir.setBorder(null);
         getContentPane().add(txt_inpput_tglLahir, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 340, 510, 30));
 
-        btn_lanjutkeDataOrtu.setBackground(new java.awt.Color(255, 255, 255));
-        btn_lanjutkeDataOrtu.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        btn_lanjutkeDataOrtu.setForeground(new java.awt.Color(57, 53, 255));
-        btn_lanjutkeDataOrtu.setText("Lanjut Ke Data Ortu");
-        btn_lanjutkeDataOrtu.addActionListener(new java.awt.event.ActionListener() {
+        btn_home.setForeground(new java.awt.Color(62, 130, 255));
+        btn_home.setText("Home");
+        btn_home.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_lanjutkeDataOrtuActionPerformed(evt);
+                btn_homeActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_lanjutkeDataOrtu, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 90, 310, 60));
-
-        btn_home.setText("Home");
         getContentPane().add(btn_home, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 120, -1));
 
         btn_transaksi.setText("Transaksi");
@@ -103,6 +98,17 @@ public class profil_anak extends javax.swing.JFrame {
         btn_konten.setText("Konten");
         getContentPane().add(btn_konten, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 540, 100, -1));
 
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(57, 35, 255));
+        jButton1.setText("Lanjut Ke Data Ortu");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 80, 320, 70));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/profil anak.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, -1, -1));
 
@@ -113,9 +119,15 @@ public class profil_anak extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_rbt_yaActionPerformed
 
-    private void btn_lanjutkeDataOrtuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_lanjutkeDataOrtuActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btn_lanjutkeDataOrtuActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        profil_MomandDad Simpan = new profil_MomandDad ();
+        Simpan.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
+        Home_user Kembali = new Home_user();
+        Kembali.setVisible(true);
+    }//GEN-LAST:event_btn_homeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -157,8 +169,8 @@ public class profil_anak extends javax.swing.JFrame {
     private javax.swing.JButton btn_home;
     private javax.swing.JButton btn_komunitas;
     private javax.swing.JButton btn_konten;
-    private javax.swing.JToggleButton btn_lanjutkeDataOrtu;
     private javax.swing.JButton btn_transaksi;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JRadioButton rbt_lakilaki;
     private javax.swing.JRadioButton rbt_perempuan;

@@ -34,21 +34,27 @@ public class Halaman_Login_User extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btn_Masuk.setBackground(new java.awt.Color(62, 130, 255));
+        btn_Masuk.setFont(new java.awt.Font("Segoe UI Semibold", 2, 36)); // NOI18N
+        btn_Masuk.setForeground(new java.awt.Color(255, 255, 255));
         btn_Masuk.setText("Masuk");
         btn_Masuk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_MasukActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_Masuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 380, 440, 60));
+        getContentPane().add(btn_Masuk, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 370, 550, 90));
 
-        btn_daftar.setText("Daftar");
+        btn_daftar.setBackground(new java.awt.Color(255, 255, 255));
+        btn_daftar.setFont(new java.awt.Font("Segoe UI Semibold", 2, 36)); // NOI18N
+        btn_daftar.setForeground(new java.awt.Color(62, 130, 255));
+        btn_daftar.setText("Daftar Akun Baru");
         btn_daftar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btn_daftarActionPerformed(evt);
             }
         });
-        getContentPane().add(btn_daftar, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 480, 420, 70));
+        getContentPane().add(btn_daftar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 470, 550, 90));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/Halaman Login User.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -80, -1, -1));

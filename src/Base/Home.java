@@ -33,16 +33,28 @@ public class Home extends javax.swing.JFrame {
         btn_chatdokter = new javax.swing.JButton();
         btn_komunitas = new javax.swing.JButton();
         btn_konten = new javax.swing.JButton();
+        btn_ProfilAnak = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btn_tambahprofilanak.setBackground(new java.awt.Color(0,0,0,0));
         btn_tambahprofilanak.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        btn_tambahprofilanak.setText("Tambah Profil Anak");
-        getContentPane().add(btn_tambahprofilanak, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 280, 280, 50));
+        btn_tambahprofilanak.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_tambahprofilanakActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_tambahprofilanak, new org.netbeans.lib.awtextra.AbsoluteConstraints(803, 190, 280, 130));
 
+        btn_home.setForeground(new java.awt.Color(62, 130, 255));
         btn_home.setText("Home");
+        btn_home.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_homeActionPerformed(evt);
+            }
+        });
         getContentPane().add(btn_home, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 220, 110, -1));
 
         btn_transaksi.setText("Transaksi");
@@ -57,11 +69,34 @@ public class Home extends javax.swing.JFrame {
         btn_konten.setText("Konten");
         getContentPane().add(btn_konten, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 580, 90, -1));
 
+        btn_ProfilAnak.setBackground(new java.awt.Color(0,0,0,0));
+        btn_ProfilAnak.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_ProfilAnakActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btn_ProfilAnak, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 190, 110, 130));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/UI_componet_CareNity/Home.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btn_ProfilAnakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_ProfilAnakActionPerformed
+        Data_Anak Update = new Data_Anak();
+        Update.setVisible(true);
+    }//GEN-LAST:event_btn_ProfilAnakActionPerformed
+
+    private void btn_homeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_homeActionPerformed
+        Home home = new Home();
+        home.setVisible(true);
+    }//GEN-LAST:event_btn_homeActionPerformed
+
+    private void btn_tambahprofilanakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_tambahprofilanakActionPerformed
+        profil_anak Kembali = new profil_anak();
+        Kembali.setVisible(true);
+    }//GEN-LAST:event_btn_tambahprofilanakActionPerformed
 
     /**
      * @param args the command line arguments
@@ -99,6 +134,7 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_ProfilAnak;
     private javax.swing.JButton btn_chatdokter;
     private javax.swing.JButton btn_home;
     private javax.swing.JButton btn_komunitas;
